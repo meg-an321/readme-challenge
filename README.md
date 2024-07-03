@@ -3,7 +3,7 @@
 pratice run
 
 ## Description
-<p>This project had students create a command-line application that dynamically generates a professional README file frpm a users input using the inqurier package.</p>
+<p>This project had students create a command-line application that dynamically generates a professional README file from a users input using the inqurier package.</p>
 
 
 ## Table of Contents
@@ -38,4 +38,4 @@ pratice run
 <p>If you have any questions please reach out to me by GitHUb from the link below
 <a href="#">https://github.com/hello123</a>
 </p>
-<p>or by email hello@gmail.com Thank you</p>
+<p>or by email hello@ExampleGmail.com Thank you. The link to the video is also avaliable here: https://drive.google.com/file/d/1TwH_5xLYCWvYZA-LqlldIiy2zTihqzHW/view?usp=sharing </p>

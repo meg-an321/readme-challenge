@@ -65,7 +65,7 @@ ${answers.title}
 <p>If you have any questions please reach out to me by GitHUb from the link below
 <a href="#">https://github.com/${answers.gitHub}</a>
 </p>
-<p>or by email ${answers.email} Thank you</p>
+<p>or by email ${answers.email} Thank you. The link to the video is also avaliable here: https://drive.google.com/file/d/1TwH_5xLYCWvYZA-LqlldIiy2zTihqzHW/view?usp=sharing</p>
 `;
 
 const saveReadMe = (md) => {
