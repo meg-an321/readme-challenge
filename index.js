@@ -6,59 +6,11 @@
 // // TODO: Create an array of questions for user input
 // const questions = [
 
-//     {
-//         type: 'input',
-//         name: 'title',
-//         message: 'What is the title of your project?',
-//     },
-//     {
-//         type: 'input',
-//         name: 'description',
-//         message: 'Please provide a description of your project.',
-//     },
-//     {
-//         type: 'input',
-//         name: 'installation',
-//         message: 'Please provide installation instructions for your project.',
-//     },
-//     {
-//         type: 'input',
-//         name: 'usage',
-//         message: 'Please provide usage information for your project.',
-//     },
-//     {
-//         type: 'input',
-//         name: 'contribution',
-//         message: 'Please provide contribution guidelines for your project.',
-//     },
-//     {
-//         type: 'input',
-//         name: 'test',
-//         message: 'Please provide test instructions for your project.',
-//     },
-//     {
-//         type: 'list',
-//         name: 'license',
-//         message: 'Please select a license for your project.',
-//         choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-//     },
-//     {
-//         type: 'input',
-//         name: 'github',
-//         message: 'Please provide your GitHub username.',
-//     },
-//     {
-//         type: 'input',
-//         name: 'email',
-//         message: 'Please provide your email address.',
-//     },
-// ];
+//     
 
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, (err) =>
-//         err ? console.error(err) : console.log('Success!')
-//     );
+//     
 // }
 
 // // TODO: Create a function to initialize app
@@ -74,15 +26,19 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const buildReadMe = (answers) => `
-# readme-challenge
-<p>${answers.title}</p>
+# README
+${answers.title}
 
 ## Description
-<p>${answers.descripton}</p>
+<p>${answers.description}</p>
 
 
 ## Table of Contents
-<ul>...</ul>
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test](#test)
+- [License](#license)
+- [Questions](#questions)
 
 
 
@@ -106,6 +62,10 @@ const buildReadMe = (answers) => `
 <p>${answers.test}</p>
 
 ## Questions
+<p>If you have any questions please reach out to me by GitHUb from the link below
+<a href="#">https://github.com/${answers.gitHub}</a>
+</p>
+<p>or by email ${answers.email} Thank you</p>
 `;
 
 const saveReadMe = (md) => {
@@ -125,31 +85,31 @@ inquirer
             type: "input",
             name: "description",
             message: "Please provide a description of your project.",
-            default: "This project...",
+            default: "This project had students create a command-line application that dynamically generates a professional README file frpm a users input using the inqurier package.",
         },
         {
             type: "input",
             name: "installation",
-            message: "Please provide instalation insrutcions for your project.",
-            default: "",
+            message: "Please provide instalation instructions for your project.",
+            default: "This project was created by the installation of json package and json lock package as well as installation of node modules/ gitignore.",
         },
         {
             type: "input",
             name: "usage",
             message: "Please provide usage for this project.",
-            default: "",
+            default: "This usually is the first place that potential employers will look to evaluate my skills. Also allows me to showcase my work to other developers.",
         },
         {
             type: "input",
-            name: "contibution",
+            name: "contribution",
             message: "Provide contibution guildlines for this project.",
-            default: "",
+            default: "none",
         },
         {
             type: "input",
             name: "test",
             message: "Provide test instruction for this project.",
-            default: "",
+            default: "To test this project, open git bash, type node index.js and fill out questions by clicking enter.",
         },
         {
             type: 'list',
@@ -161,7 +121,7 @@ inquirer
             type: "input",
             name: "gitHub",
             message: "What is your GitHub username?",
-            default: "",
+            default: "meg-an321",
         },
         {
             type: "input",
